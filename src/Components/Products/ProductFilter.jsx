@@ -49,7 +49,7 @@ const ProductFilter = () => {
 
   const renderFilters = () => (
     <div style={{ padding: "20px" }}>
-      <h3>Filters</h3>
+      <h2 >Filters</h2>
       <div style={{ marginBottom: "20px" }}>
         <h4>Brand</h4>
         <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
@@ -97,7 +97,7 @@ const ProductFilter = () => {
     <Layout>
       <Header style={{ background: "#fff", padding: "10px", display: "flex", alignItems: "center", justifyContent: "space-between",boxShadow: "0 2px 10px rgba(0,0,0,0.1)" }}>
         <Button icon={<MenuOutlined />} onClick={() => setDrawerVisible(true)} style={{ display: "none", marginRight: "10px" }} id="mobile-menu-btn" />
-        {/* Left Side: Logo */}
+       
         <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
             <img
             src="https://your-logo-url.com/logo.png"
@@ -106,7 +106,7 @@ const ProductFilter = () => {
             />
         </div>
 
-        {/* Center: Search Bar */}
+       
         <Input
             placeholder="What are you looking for?"
             prefix={<SearchOutlined />}
@@ -119,12 +119,11 @@ const ProductFilter = () => {
             }}
         />
 
-            {/* Right Side: User Controls */}
+            
             <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
-                {/* Wishlist */}
+               
                 <Button icon={<HeartOutlined />} type="text" style={{ fontSize: "18px" }} />
 
-                {/* Cart */}
                 <Button icon={<ShoppingCartOutlined />} type="text" style={{ fontSize: "18px" }} />
 
                 {/* Language Selector */}
@@ -135,7 +134,7 @@ const ProductFilter = () => {
                 <Select.Option value="mal">Malayalam</Select.Option>
                 </Select>
 
-                {/* User Profile */}
+               
                 <Text className="welcome-text">Welcome, Bhuvanesh</Text>
                 <Avatar size="large" src="https://your-profile-pic-url.com/avatar.png" />
             </div>    
